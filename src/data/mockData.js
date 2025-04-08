@@ -74,7 +74,7 @@ export const mockCars = [
     fuelType: "Hybrid",
     seatingCapacity: 5,
     mileage: 20,
-    image: "https://images.unsplash.com/photo-1619767886558-efdc259b6e09?w=500"
+    image: "https://images.unsplash.com/photo-1577496549804-8b05f1f67338?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3Dw=500"
   },
   {
     id: 8,
@@ -85,7 +85,7 @@ export const mockCars = [
     fuelType: "Hybrid",
     seatingCapacity: 7,
     mileage: 19,
-    image: "https://images.unsplash.com/photo-1615288639464-2445b0f7b32e?w=500"
+    image: "https://www.volvocars.com/images/cs/v3/assets/blt0feaa88e629251fc/bltcb8e98e8515c4b7c/671fbb40a14f863af3d3e331/us-xc90-overview-gallery-1-16x9.jpg?branch=prod_alias&auto=avif&quality=85&format=webp&iar=0&w=1080&imdensity=1?w=500"
   },
   {
     id: 9,
@@ -129,6 +129,6 @@ export const mockCars = [
     fuelType: "Diesel",
     seatingCapacity: 5,
     mileage: 15,
-    image: "https://images.unsplash.com/photo-1600705722908-bab2ad1a5bd0?w=500"
+    image: "https://wallpapercat.com/w/middle-retina/7/d/c/1666668-3840x2160-desktop-4k-jaguar-i-pace-background-photo.jpg?w=500"
   }
 ]

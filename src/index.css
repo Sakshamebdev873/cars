@@ -10,5 +10,6 @@
 }
 
 .dark {
-  color-scheme: dark;
+  color: white;
+  background-color: rgb(78, 78, 78);
 }

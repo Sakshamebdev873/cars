@@ -3,7 +3,8 @@ import SearchBar from './components/SearchBar'
 import CarList from './components/CarList'
 import Wishlist from './components/Wishlist'
 import { mockCars } from './data/mockData'
-
+import { FaRegMoon } from "react-icons/fa";
+import { IoSunnyOutline } from "react-icons/io5";
 function App() {
   const [cars, setCars] = useState([])
   const [filteredCars, setFilteredCars] = useState([])
@@ -73,13 +74,14 @@ function App() {
           <h1 className="text-3xl font-bold">Car Finder</h1>
           <button
             onClick={toggleDarkMode}
-            className="px-4 py-2 rounded-lg bg-blue-500 text-white hover:bg-blue-600 transition-colors"
+            className="px-4 py-2 rounded-lg bg-blue-500 text- flex  justify-center items-center gap-2  hover:bg-blue-600 transition-colors"
           >
-            {isDarkMode ? '🌞 Light Mode' : '🌙 Dark Mode'}
+            {isDarkMode ? <IoSunnyOutline /> : <FaRegMoon />}
+            {isDarkMode ? <div className='text-white' >Light Mode</div> : <div className='text-black' >Dark Mode</div>}
           </button>
         </div>
         
-        <SearchBar onSearch={handleSearch} />
+        <SearchBar DarkMode={isDarkMode} onSearch={handleSearch} />
         
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div className="md:col-span-2">
@@ -89,11 +91,12 @@ function App() {
               carsPerPage={carsPerPage}
               setCurrentPage={setCurrentPage}
               wishlist={wishlist}
+              DarkMode={isDarkMode}
               toggleWishlist={toggleWishlist}
             />
           </div>
           <div className="md:col-span-1">
-            <Wishlist wishlist={wishlist} toggleWishlist={toggleWishlist} />
+            <Wishlist wishlist={wishlist} DarkMode={isDarkMode} toggleWishlist={toggleWishlist} />
           </div>
         </div>
       </div>
